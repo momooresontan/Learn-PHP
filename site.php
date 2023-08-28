@@ -6,10 +6,15 @@
     <title>Document</title>
 </head>
 <body>
-    
-
+    <form action="site.php" method="get">
+        <input type="text" name="name" placeholder="Name">
+        <input type="submit" >
+    </form>
+    <br>
     <?php 
-        echo floor(2.9);
+        //echo floor(2.9);
+        echo $_GET["name"];
     ?>
+
 </body>
 </html>
