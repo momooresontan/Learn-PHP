@@ -36,10 +36,10 @@
 
         <input type="submit"> 
     </form> -->
-    <!-- <form action="site.php" method="post">
-
+    <form action="site.php" method="post">
+        <input type="text" name="student"><br>
         <input type="submit"> 
-    </form> -->
+    </form>
 
     <br>
     <?php 
@@ -70,7 +70,7 @@
         // echo $fruits[0];
 
         $grades = array("MoMo" => "A", "Ade" => "A", "Lana" => "B");
-        echo $grades["Lana"];
+        echo $grades[$_POST["student"]];
 
     ?>
 
