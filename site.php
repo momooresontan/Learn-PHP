@@ -17,29 +17,38 @@
         <input type="number" name="num2" placeholder="Number 2"><br>
         <input type="submit">
     </form> -->
-    <form action="site.php" method="get">
+    <!-- <form action="site.php" method="get">
         <input type="text" name="color" placeholder="Color"><br>
         <input type="text" name="pluralNoun" placeholder="Plural Noun"><br>
         <input type="text" name="celebrity" placeholder="Celebrity"><br>
+
+        <input type="submit">    
+    </form> -->
+    <form action="site.php" method="get">
+        <input type="text" name="name" placeholder="Name"><br>
 
         <input type="submit">    
     </form>
 
     <br>
     <?php 
+        // number
         //echo floor(2.9);
+        //form
         // echo $_GET["name"], "<br>";
         // echo $_GET["age"], "<br>";
         // echo $_GET["email"];
-
+        //calculator
         //echo $_GET["num1"] + $_GET["num2"];
+        //madlibs
+        // $color = $_GET["color"];
+        // $pluralNoun = $_GET["pluralNoun"];
+        // $celebrity = $_GET["celebrity"];
+        // echo "Roses are $color <br>";
+        // echo "$pluralNoun are $color <br>";
+        // echo "I love $celebrity <br>";
 
-        $color = $_GET["color"];
-        $pluralNoun = $_GET["pluralNoun"];
-        $celebrity = $_GET["celebrity"];
-        echo "Roses are {color} <br>";
-        echo "{plural noun} are blue <br>";
-        echo "I love {celebrity} <br>";
+        echo $_GET["name"];
     ?>
 
 </body>
