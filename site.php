@@ -29,6 +29,11 @@
 
         <input type="submit">    
     </form> -->
+    <form action="site.php" method="post">
+        Apples: <input type="checkbox" name="fruits[]" value="apples"><br>
+
+        <input type="submit"> 
+    </form>
 
     <br>
     <?php 
@@ -49,9 +54,11 @@
         // echo "I love $celebrity <br>";
         //Using POSTs
         //echo $_POST["password"];
-
-        $friends = array("Kevin", "Lana", "FeyinT", "Adeife");
-        echo $friends[0];
+        //arrays
+        // $friends = array("Kevin", "Lana", "FeyinT", "Adeife");
+        // $friends[0] = "Murewa";
+        // $friends[4] = "Sammy";
+        // echo count($friends);
 
     ?>
 
