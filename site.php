@@ -24,11 +24,11 @@
 
         <input type="submit">    
     </form> -->
-    <form action="site.php" method="get">
-        <input type="text" name="name" placeholder="Name"><br>
+    <!-- <form action="site.php" method="post">
+        <input type="password" name="password" placeholder="Password"><br>
 
         <input type="submit">    
-    </form>
+    </form> -->
 
     <br>
     <?php 
@@ -47,8 +47,12 @@
         // echo "Roses are $color <br>";
         // echo "$pluralNoun are $color <br>";
         // echo "I love $celebrity <br>";
+        //Using POSTs
+        //echo $_POST["password"];
 
-        echo $_GET["name"];
+        $friends = array("Kevin", "Lana", "FeyinT", "Adeife");
+        echo $friends[0];
+
     ?>
 
 </body>
