@@ -36,10 +36,10 @@
 
         <input type="submit"> 
     </form> -->
-    <form action="site.php" method="post">
+    <!-- <form action="site.php" method="post">
         <input type="text" name="student"><br>
         <input type="submit"> 
-    </form>
+    </form> -->
 
     <br>
     <?php 
@@ -68,10 +68,23 @@
         //checkbox
         // $fruits = $_POST["fruits"];
         // echo $fruits[0];
+        //Associative arrays
+        // $grades = array("MoMo" => "A", "Ade" => "A", "Lana" => "B");
+        // echo $grades[$_POST["student"]];
+        //function
+        // function sayHi($name){
+        //     echo "Hello $name <br>";
+        // }
+        // sayHi("MoMo");
+        // sayHi("Tom");
+        // sayHi("David");
 
-        $grades = array("MoMo" => "A", "Ade" => "A", "Lana" => "B");
-        echo $grades[$_POST["student"]];
+        function cube ($num){
+            return $num * $num * $num;
+        }
 
+        $cubeResult = cube(5);
+        echo $cubeResult;
     ?>
 
 </body>
