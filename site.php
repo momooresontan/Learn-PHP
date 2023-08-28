@@ -29,11 +29,17 @@
 
         <input type="submit">    
     </form> -->
-    <form action="site.php" method="post">
+    <!-- <form action="site.php" method="post">
         Apples: <input type="checkbox" name="fruits[]" value="apples"><br>
+        Oranges: <input type="checkbox" name="fruits[]" value="oranges"><br>
+        Pears: <input type="checkbox" name="fruits[]" value="pears"><br>
 
         <input type="submit"> 
-    </form>
+    </form> -->
+    <!-- <form action="site.php" method="post">
+
+        <input type="submit"> 
+    </form> -->
 
     <br>
     <?php 
@@ -59,6 +65,12 @@
         // $friends[0] = "Murewa";
         // $friends[4] = "Sammy";
         // echo count($friends);
+        //checkbox
+        // $fruits = $_POST["fruits"];
+        // echo $fruits[0];
+
+        $grades = array("MoMo" => "A", "Ade" => "A", "Lana" => "B");
+        echo $grades["Lana"];
 
     ?>
 
