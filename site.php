@@ -19,11 +19,13 @@
     </form>
 
     <br>
-    <?php 
+    Addition : <?php 
         //echo floor(2.9);
         // echo $_GET["name"], "<br>";
         // echo $_GET["age"], "<br>";
         // echo $_GET["email"];
+
+        echo $_GET["num1"] + $_GET["num2"];
     ?>
 
 </body>
