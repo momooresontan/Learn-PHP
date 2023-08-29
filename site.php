@@ -167,9 +167,10 @@
         //     echo "$index <br>";
         //     $index++;
         // }while($index <= 5);
-
-        for($i = 1; $i <= 5; $i++){
-            
+        
+        $luckyNo = array(4, 8, 15, 20, 25, 50, 30, 40, 41);
+        for($i = 0; $i <= count($luckyNo); $i++){
+            echo "$luckyNo[$i] <br>";
         }
 
 
