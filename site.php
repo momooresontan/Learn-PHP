@@ -172,14 +172,12 @@
         // for($i = 0; $i <= count($luckyNo); $i++){
         //     echo "$luckyNo[$i] <br>";
         // }
-
-        include "header.html";
-
+        //Include PHP
+        //include "header.html";
+        
+        include "article-header.php";
 
     ?>
 
-    <?php 
-        include "footer.html";
-    ?>
 </body>
 </html>
