@@ -86,10 +86,14 @@
         // $cubeResult = cube(5);
         // echo $cubeResult;
 
-        $isMale = false;
-        if($isMale){
+        $isMale = true;
+        $isTall = true;
+        if($isMale && $isTall){
             echo "You are male";
-        } else {
+        } elseif(){
+            
+        } 
+        else {
             echo "You are not male";
         }
     ?>
