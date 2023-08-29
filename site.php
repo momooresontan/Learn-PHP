@@ -124,7 +124,16 @@
 
         if($operator == "+"){
             echo $num1 + $num2;
+        } elseif($operator == "-"){
+            echo $num1 - $num2;
+        } elseif($operator == "*"){
+            echo $num1 * $num2;
+        } elseif($operator == "/"){
+            echo $num1 / $num2;
+        } else{
+            echo "Invalid operator";
         }
+
     ?>
 
 </body>
