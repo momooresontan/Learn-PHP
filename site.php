@@ -40,11 +40,16 @@
         <input type="text" name="student"><br>
         <input type="submit"> 
     </form> -->
-    <form action="site.php" method="post">
-        <input type="number" name="num1" placeholder="Number1"><br>    
+    <!-- <form action="site.php" method="post">
+        <input type="number" name="num1" step="0.1" placeholder="Number1"><br>    
         <input type="text" name="operator" placeholder="Operator"><br>
         <input type="number" name="num2" placeholder="Number2"><br>
 
+        <input type="submit"> 
+    </form> -->
+    <form action="site.php" method="post">
+        What was your grade?
+        <input type="text" name="grade" placeholder="Grade"><br>
         <input type="submit"> 
     </form>
 
@@ -117,21 +122,34 @@
         // }
 
         // echo getMax(6, 5, 4);
+        // Calculator 2.0
+        // $num1 = $_POST["num1"];
+        // $num2 = $_POST["num2"];
+        // $operator = $_POST["operator"];
 
-        $num1 = $_POST["num1"];
-        $num2 = $_POST["num2"];
-        $operator = $_POST["operator"];
+        // if($operator == "+"){
+        //     echo $num1 + $num2;
+        // } elseif($operator == "-"){
+        //     echo $num1 - $num2;
+        // } elseif($operator == "*"){
+        //     echo $num1 * $num2;
+        // } elseif($operator == "/"){
+        //     echo $num1 / $num2;
+        // } else{
+        //     echo "Invalid operator";
+        // }
 
-        if($operator == "+"){
-            echo $num1 + $num2;
-        } elseif($operator == "-"){
-            echo $num1 - $num2;
-        } elseif($operator == "*"){
-            echo $num1 * $num2;
-        } elseif($operator == "/"){
-            echo $num1 / $num2;
-        } else{
-            echo "Invalid operator";
+        $grade = $_POST["grade"];
+        switch ($grade){
+            case "A":
+                echo "You did amazing!";
+                break;
+            case "B":
+                echo "You did pretty well";
+                break;
+            case "C":
+                echo "You can do better";
+                break;
         }
 
     ?>
