@@ -184,26 +184,19 @@
         // sayHi("MoMo");
         // echo $feetInMile;
         // Classes & Objects
-        class Book {
-            var $title;
-            var $author;
-            var $pages;
-
-            function __construct($aTitle, $aAuthor, $aPages){
-                $this -> title = $aTitle;
-                $this -> author = $aAuthor;
-                $this -> pages = $aPages;
-            }
-        }
-        $book1 = new Book();
-        $book1 -> title = "Harry Potter <br>";
-        $book1 -> author = "MoMo <br>";
-        $book1 -> pages = "300 <br>";
-
-        $book2 = new Book();
-        $book2 -> title = "Lord of the Rings <br>";
-        $book2 -> author = "MoMo <br>";
-        $book2 -> pages = "200 <br>";
+        // class Book {
+        //     var $title;
+        //     var $author;
+        //     var $pages;
+        //Constructor
+        //     function __construct($aTitle, $aAuthor, $aPages){
+        //         $this -> title = $aTitle;
+        //         $this -> author = $aAuthor;
+        //         $this -> pages = $aPages;
+        //     }
+        // }
+        // $book1 = new Book("Harry Potter <br>", "MoMo <br>", "300 <br>");
+        // $book2 = new Book("Lord of the Rings <br>", "MoMo <br>", "200 <br>");
 
         // echo $book1->title;
         // echo $book1->author;
@@ -213,7 +206,18 @@
         // echo $book2->author;
         // echo $book2->pages;
 
+        class Student {
+            var $name;
+            var $major;
+            var $gpa;
 
+            function __construct($name, $major, $gpa){
+                $this->name = $name;
+                $this->major = $major;
+                $this->gpa = $gpa;
+            }
+
+        }
 
     ?>
 
