@@ -216,8 +216,9 @@
                 $this->major = $major;
                 $this->gpa = $gpa;
             }
-
         }
+        $student1 = new Student("Jim", "Business", 3.4);
+        $student2 = new Student("Pam", "Art", 3.3);
 
     ?>
 
