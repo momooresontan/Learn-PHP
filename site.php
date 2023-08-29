@@ -47,11 +47,11 @@
 
         <input type="submit"> 
     </form> -->
-    <form action="site.php" method="post">
+    <!-- <form action="site.php" method="post">
         What was your grade?
         <input type="text" name="grade" placeholder="Grade"><br>
         <input type="submit"> 
-    </form>
+    </form> -->
 
     <br>
     <?php 
@@ -138,19 +138,32 @@
         // } else{
         //     echo "Invalid operator";
         // }
+        //Switchcase
+        // $grade = $_POST["grade"];
+        // switch ($grade){
+        //     case "A":
+        //         echo "You did amazing!";
+        //         break;
+        //     case "B":
+        //         echo "You did pretty well";
+        //         break;
+        //     case "C":
+        //         echo "You can do better";
+        //         break;
+        //     case "F":
+        //         echo "You failed!";
+        //         break;
+        //     default: 
+        //         echo "Invalid grade";
+        //         break;
+        // }
 
-        $grade = $_POST["grade"];
-        switch ($grade){
-            case "A":
-                echo "You did amazing!";
-                break;
-            case "B":
-                echo "You did pretty well";
-                break;
-            case "C":
-                echo "You can do better";
-                break;
+        $index = 1;
+        while($index <= 5){
+            echo "$index <br>";
+            $index++;
         }
+
 
     ?>
 
