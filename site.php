@@ -183,29 +183,34 @@
         // include "useful-tools.php";
         // sayHi("MoMo");
         // echo $feetInMile;
-
+        // Classes & Objects
         class Book {
             var $title;
             var $author;
             var $pages;
+
+            function __construct($name){
+                echo "$name <br>";
+            }
         }
-        $book1 = new Book;
+        $book1 = new Book("King ");
         $book1 -> title = "Harry Potter <br>";
         $book1 -> author = "MoMo <br>";
         $book1 -> pages = "300 <br>";
 
-        $book2 = new Book;
+        $book2 = new Book("MoMo");
         $book2 -> title = "Lord of the Rings <br>";
         $book2 -> author = "MoMo <br>";
         $book2 -> pages = "200 <br>";
 
-        echo $book1->title;
-        echo $book1->author;
-        echo $book1->pages;
+        // echo $book1->title;
+        // echo $book1->author;
+        // echo $book1->pages;
 
-        echo $book2->title;
-        echo $book2->author;
-        echo $book2->pages;
+        // echo $book2->title;
+        // echo $book2->author;
+        // echo $book2->pages;
+
 
 
     ?>
