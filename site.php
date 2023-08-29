@@ -78,13 +78,20 @@
         // sayHi("MoMo");
         // sayHi("Tom");
         // sayHi("David");
+        //function return
+        // function cube ($num){
+        //     return $num * $num * $num;
+        // }
 
-        function cube ($num){
-            return $num * $num * $num;
+        // $cubeResult = cube(5);
+        // echo $cubeResult;
+
+        $isMale = false;
+        if($isMale){
+            echo "You are male";
+        } else {
+            echo "You are not male";
         }
-
-        $cubeResult = cube(5);
-        echo $cubeResult;
     ?>
 
 </body>
