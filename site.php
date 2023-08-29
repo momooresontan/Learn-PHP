@@ -157,11 +157,19 @@
         //         echo "Invalid grade";
         //         break;
         // }
+        //while & do while loops
+        // $index = 1;
+        // while($index <= 5){
+        //     echo "$index <br>";
+        //     $index++;
+        // }
+        // do{
+        //     echo "$index <br>";
+        //     $index++;
+        // }while($index <= 5);
 
-        $index = 1;
-        while($index <= 5){
-            echo "$index <br>";
-            $index++;
+        for($i = 1; $i <= 5; $i++){
+            
         }
 
 
