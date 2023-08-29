@@ -167,14 +167,19 @@
         //     echo "$index <br>";
         //     $index++;
         // }while($index <= 5);
-        
-        $luckyNo = array(4, 8, 15, 20, 25, 50, 30, 40, 41);
-        for($i = 0; $i <= count($luckyNo); $i++){
-            echo "$luckyNo[$i] <br>";
-        }
+        //for loops
+        // $luckyNo = array(4, 8, 15, 20, 25, 50, 30, 40, 41);
+        // for($i = 0; $i <= count($luckyNo); $i++){
+        //     echo "$luckyNo[$i] <br>";
+        // }
+
+        include "header.html";
 
 
     ?>
 
+    <?php 
+        include "footer.html";
+    ?>
 </body>
 </html>
