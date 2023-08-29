@@ -172,10 +172,41 @@
         // for($i = 0; $i <= count($luckyNo); $i++){
         //     echo "$luckyNo[$i] <br>";
         // }
-        //Include PHP
+        //Include HTML
         //include "header.html";
-        
-        include "article-header.php";
+       //Include PHP file 
+        // $title = "My First Post";
+        // $author = "MoMo";
+        // $wordCount = 400;
+        // include "article-header.php";
+ 
+        // include "useful-tools.php";
+        // sayHi("MoMo");
+        // echo $feetInMile;
+
+        class Book {
+            var $title;
+            var $author;
+            var $pages;
+        }
+        $book1 = new Book;
+        $book1 -> title = "Harry Potter <br>";
+        $book1 -> author = "MoMo <br>";
+        $book1 -> pages = "300 <br>";
+
+        $book2 = new Book;
+        $book2 -> title = "Lord of the Rings <br>";
+        $book2 -> author = "MoMo <br>";
+        $book2 -> pages = "200 <br>";
+
+        echo $book1->title;
+        echo $book1->author;
+        echo $book1->pages;
+
+        echo $book2->title;
+        echo $book2->author;
+        echo $book2->pages;
+
 
     ?>
 
