@@ -40,6 +40,13 @@
         <input type="text" name="student"><br>
         <input type="submit"> 
     </form> -->
+    <form action="site.php" method="post">
+        <input type="number" name="num1" placeholder="Number1"><br>    
+        <input type="text" name="operator" placeholder="Operator"><br>
+        <input type="number" name="num2" placeholder="Number2"><br>
+
+        <input type="submit"> 
+    </form>
 
     <br>
     <?php 
@@ -98,18 +105,26 @@
         // else {
         //     echo "You are neither male nor tall";
         // }
+        //if comparisons operators
+        // function getMax($num1, $num2, $num3){
+        //    if($num1 >= $num2 && $num1 >= $num3){
+        //     return $num1;
+        //    } elseif($num2 >= $num1 && $num2 >= $num3){
+        //     return $num2;
+        //    } else{
+        //     return $num3;
+        //    }
+        // }
 
-        function getMax($num1, $num2, $num3){
-            if($num1 > $num2){
-                return $num1;
-            } elseif($num2 > $num1){
-                return $num2;
-            } else{
-                return "Same number";
-            }
+        // echo getMax(6, 5, 4);
+
+        $num1 = $_POST["num1"];
+        $num2 = $_POST["num2"];
+        $operator = $_POST["operator"];
+
+        if($operator == "+"){
+            echo $num1 + $num2;
         }
-
-        echo getMax(6, 6);
     ?>
 
 </body>
