@@ -85,17 +85,31 @@
 
         // $cubeResult = cube(5);
         // echo $cubeResult;
+        //if statement
+        // $isMale = false;
+        // $isTall = false;
+        // if($isMale && $isTall){
+        //     echo "You are a tall male";
+        // } elseif($isMale && !$isTall){
+        //     echo "You are a short male";
+        // } elseif(!$isMale && $isTall){
+        //     echo "You are not male but you are tall";
+        // } 
+        // else {
+        //     echo "You are neither male nor tall";
+        // }
 
-        $isMale = true;
-        $isTall = true;
-        if($isMale && $isTall){
-            echo "You are male";
-        } elseif(){
-            
-        } 
-        else {
-            echo "You are not male";
+        function getMax($num1, $num2, $num3){
+            if($num1 > $num2){
+                return $num1;
+            } elseif($num2 > $num1){
+                return $num2;
+            } else{
+                return "Same number";
+            }
         }
+
+        echo getMax(6, 6);
     ?>
 
 </body>
