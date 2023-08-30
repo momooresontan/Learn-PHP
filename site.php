@@ -231,15 +231,28 @@
 
         class Movie {
             public $title;
-            public $rating;
+            private $rating;
 
             function __construct($title, $rating){
                 $this->title = $title;
                 $this->rating = $rating;
             }
+            function getRating(){
+                return $this->rating;
+            }
+            function setRating($rating){
+                if($rating == "PG-13" || $rating == "G" || $rating == "PG" || $rating == "R" || $rating == "NR"){
+                    $this->rating = $rating;
+                }else{
+                    $this->rating = "NR";
+                }
+
+            }
+
         }
         $avengers = new Movie("Avengers", "PG-13");
-        echo $avengers->rating;
+        $avengers->setRating("Dog");
+        echo $avengers->getRating();
     ?>
 
 </body>
