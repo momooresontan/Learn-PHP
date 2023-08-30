@@ -263,6 +263,10 @@
                 echo "The chef makes bbq ribs <br>";
             }
         }
+        class ItalinChef extends Chef{
+
+        }
+
         $chef = new Chef();
         $chef->makeChicken();
     ?>
